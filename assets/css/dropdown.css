@@ -1,0 +1,161 @@
+
+
+.header-section .dropdown-menu {
+    top: 4.563rem;
+    box-sizing: border-box;
+    height: 21.5rem;
+    width: 21.625rem;
+    border: .063rem solid rgba(136, 151, 162, .2);
+    border-radius: .25rem;
+    background-color: #fff;
+    box-shadow: 0 .25rem .5rem 0 rgba(0, 0, 0, .1);
+    justify-content: space-around;
+    flex-direction: column;
+    -webkit-animation: swingIn .25s ease-out;
+    animation: swingIn .25s ease-out;
+    transform: rotateX(-10deg);
+    -webkit-transform: rotateX(-10deg);
+    -moz-transform: rotateX(-10deg);
+    -o-transform: rotateX(-10deg);
+    -ms-transform: rotateX(-10deg);
+    transform-origin: top;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: all .25s
+}
+.header-section .dropdown-menu:after, .header-section .dropdown-menu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .688rem;
+    transition: .2s
+}
+.header-section .dropdown-menu:before {
+    top: -1.438rem;
+    border-color: transparent transparent rgba(136, 151, 162, .2)
+}
+.header-section .dropdown-menu:after {
+    top: -1.313rem;
+    border-color: transparent transparent #fff
+}
+.header-section .dropdown-menu__feature .dropdown-item {
+    width: unset
+}
+.header-section .dropdown-menu__feature--side {
+    display: flex;
+    flex-direction: column
+}
+.header-section .dropdown-menu.dropdown-menu__integration {
+    width: 280px;
+    height: 588px;
+    top: 73px;
+    left: -90px
+}
+.header-section .dropdown-menu.dropdown-menu__integration .dropdown-item:first-child {
+    margin-top: .75rem
+}
+.header-section .dropdown-menu.dropdown-menu__integration .show {
+    justify-content: space-between
+}
+.header-section .dropdown-menu__feature .dropdown-item__section--words {
+    margin-left: 0
+}
+.header-section .dropdown-item {
+    margin-top: 1.5rem
+}
+.header-section .dropdown-item:hover {
+    background-color: inherit;
+    color: inherit
+}
+.header-section .dropdown-item__section {
+    display: flex
+}
+.header-section .dropdown-item__section--words {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+    white-space: normal;
+    width: 14.313rem
+}
+.header-section .dropdown-item__section--heading {
+    color: #082443;
+    font-family: Open Sans, "sans-seriff";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+    margin-bottom: .5rem
+}
+.header-section .dropdown-item__section--span {
+    color: #5e7383;
+    font-family: Open Sans, "sans-seriff";
+    font-size: .875rem;
+    line-height: 1.125rem
+}
+.header-section .dropdown-item__section--span:hover {
+    text-decoration: none
+}
+.header-section .dropdown-item__section--logo {
+    margin-right: 1rem;
+    margin-left: .25rem
+}
+.dropdown-item {
+    width: 98%
+}
+.dropdown-item__no-hover:hover {
+    text-decoration: none
+}
+.dropdown-item.dropdown__section--devdocs {
+    padding: 0;
+    width: 100%
+}
+.dropdown-item.dropdown__section--devdocs .dropdown-item__section--span {
+    margin-bottom: .75rem
+}
+.dropdown-item.dropdown__section--devdocs .dropdown-item__section--heading {
+    margin-top: .5rem;
+    margin-bottom: .75rem
+}
+.dropdown-double {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    overflow-x: hidden
+}
+.dropdown-double .dropdown-item {
+    margin-top: 1.25rem
+}
+.verticle-divider {
+    height: 20.625rem;
+    box-sizing: border-box;
+    width: .125rem;
+    border-left: .063rem solid #8897a2;
+    margin: 1.5rem 0 .5rem
+}
+.nav-item__feature {
+    height: 21.25rem;
+    width: 31.25rem
+}
+.dropdown-integration .dropdown-item__section--words {
+    margin-left: 0
+}
+.dropdown-integration__bottom {
+    background-color: #f5f7fa;
+    padding: .75rem 0 .5rem 1.5rem;
+    width: 100%
+}
+.dropdown-integration__bottom a:hover {
+    color: #051d32
+}
+.nav-item .dropdown-toggle:after {
+    position: relative;
+    top: .125rem;
+    left: .125rem;
+    border-top: .4em solid #3d4f5c;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent
+}

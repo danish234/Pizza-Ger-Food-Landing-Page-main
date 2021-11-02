@@ -1,0 +1,140 @@
+:root{
+	--color-body: #fdf7f7;
+    --color-primary: #ff7E5B;
+    --color-primary-dark: #e65100;
+    --color-secondary: #f6bd62;
+    --color-secondary-dark: #ff0000;
+    --color-secondary-darker: #fe7a0f;
+    --color-text: #3F3D56;
+    --color-text-secondary: #a6a6a6;
+}
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: var(--color-secondary);
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-secondary);
+}
+section.dark-section{
+    background-color:#3F3D56;
+}
+section.dark-section .section-title h1{
+    color: #fff !important;
+}
+section.dark-section .section-title .title-large{
+    color: rgb(255 255 255 / 17%) !important;
+}
+.product-slider__item.swiper-slide-active .product-slider__content > *:nth-child(1),
+.secondary-text.darken-1{
+	color: var(--color-secondary-dark);
+}
+.header-section__logo,
+.home .arrows i{
+	background-color: var(--color-primary);
+}
+.home .arrows i:hover:not(.disabled){
+	color: var(--color-secondary-dark);
+}
+.home .arrows i.disabled{
+	background-color: rgb(255 30 30 / 40%);
+}
+header nav.sticky .contact .info a{
+	color:var(--color-text);
+}
+.menu-items-list .menu-item:hover .item-details {
+    background-color: var(--color-secondary) !important;
+}
+.viewAll::after,
+.menuSection .menu-item:hover .menu-item-inner,
+.menuSection .menu-item:hover .menu-item-inner .menu-item-description,
+.btn-top{
+	background-color: var(--color-secondary);
+	color: #fff;
+}
+.btn:hover{
+	background-color: var(--color-secondary);
+	color:#fff;
+}
+
+/*========== Primary Color ===========*/
+.icon i,
+.header-section__navbar .nav-item:hover a,
+.header-section__navbar .nav-item:hover i,
+.menuSection .menu-item  .menu-item-inner .menu-item-title,
+.section-title h2,
+header nav .menu li a.active > i,
+header nav .menu li a.active,
+.home .header--item_price .price,
+.btn-o.addtocart i{
+	color: var(--color-primary);
+}
+
+.home .left .details p,
+.menu-item-description{
+	color: var(--color-text-secondary);
+}
+.home .bg1{
+	background-color: #fff;
+}
+.menu-items-list .menu-item .item-details .btn-add,
+.menuSection .menu-item .menu-item-inner .menu-item-bottom .viewbtn,
+.btn-secondery{
+	background-color: var(--color-primary-dark);	
+	color: #fff;
+}
+.header-section a.primary-red-btn{
+	background-color: #fff;
+	color:var(--color-primary);
+	transition: all 0.3s ease;
+}
+.header-section a.primary-red-btn:hover{
+	background-color: var(--color-primary);
+	color: #fff;
+	box-shadow: none;
+}
+.home .bg2{
+	background: linear-gradient(47deg, rgb(254, 140, 0), rgb(252 186 29));
+	background-image: linear-gradient(38deg, #c36c13 0%, #fcba1d 100%);
+	background-image: linear-gradient(38deg, #db7f31 0%, #fcba1d 100%);
+}
+.list-services,
+.viewAll::before,
+header nav .logo .logo-content{
+	background-color: var(--color-primary);
+}
+header nav .menu li:hover a,
+header nav .menu li:hover a > i,
+.home .header--item_price:nth-child(1){
+	color:var(--color-secondary);
+}
+.section-title h1{
+    color:var(--color-text);
+}
+
+.menuSection .menu-item:hover .menu-item-inner .btn-o.addtocart,
+.menuSection .menu-item:hover .menu-item-inner .btn-o.addtocart i{
+    border-color:#fff;
+    color: #fff;
+}
+.btn-o.addtocart{
+	border:1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+.header-section.active a.primary-red-btn,
+.btn-o.addtocart:hover{
+	background-color: var(--color-primary);
+	color: #fff;
+    border-color: var(--color-primary) !important;
+}
+.btn-o.addtocart:hover i{
+	color: #fff;
+}
+.primary-btn:before{
+    /*background: rgb(253 18 18 / 5%);*/
+    box-shadow: 0 0 0px 16px rgb(253 18 18 / 5%);
+}
+.btn-cart {
+    background: var(--color-secondary-dark) !important;
+}

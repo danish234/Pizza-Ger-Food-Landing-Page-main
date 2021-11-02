@@ -1,0 +1,709 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="VryENop2dLwJQrnpjVx8K5nwdtVjmll0oaKhod4H">
+    <meta name="description" content="Free &amp; Fast Pizza Delivery Applicatin Using Javascript And Bootstrap">
+    <title>Pizza Plus | Fast & Free Pizza Delivery </title>
+    <link rel='icon' href='assets/img/favicon.png' type='image/x-icon'/>
+
+    <!-- Default StyleSheets -->
+    <link href="assets/css/app.css" rel="stylesheet" async>
+    <link href="assets/css/fontawsome.min.css" rel="stylesheet" async>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css?v4.5.2">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- END -->
+
+    <!-- Skins -->
+    <link href="assets/css/skin/orange.css" rel="stylesheet" async>
+    <link href="assets/css/skin/red.css" rel="stylesheet" async>
+    <!-- End -->
+
+    <!-- Home Page Stylesheet -->
+    <link href="assets/css/home.css" rel="stylesheet" async>
+    <link href="assets/css/menu_page.css" rel="stylesheet" async>
+    <link href="assets/css/slick-slider.min.css" rel="stylesheet" async>
+    <!-- END  -->
+
+    <!-- Responsive -->
+    <link href="assets/css/responsive.css" rel="stylesheet" async>
+    <link href="assets/css/animation.css" rel="stylesheet" async>
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css'> -->
+    <link rel='stylesheet' href='assets/css/swiper.min.css'>
+    <link href="assets/css/swiperslider.css" rel="stylesheet" async>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+
+    <link href="assets/css/aos.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hide">
+
+
+
+<!-- ======== Mobile Sidebar Menu START ========-->
+    <nav id="mySidebar" class="sidebar">
+        <div class="sidebar_scroll-wrapper">
+            <div class="sidebar__top">
+                <a href="javascript:void(0)"><img src="assets/img/logo3.png" alt="PizzaPlus logo"></a>
+                <span class="sidebar__top--closebtn" id="closenav"><i class="fad fa-times"></i>Close</span>
+            </div>
+            <div class="sidebar__middle">
+                <span class="sidebar__middle--span">
+                    <i class="fal fa-home sidebar__middle--icon"></i>
+                    <a class="sidebar__middle--link" href="/solutions">Home</a>
+                </span>
+                <span class="sidebar__middle--span">
+                    <i class="fal fa-pizza-slice sidebar__middle--icon"></i>
+                    <a class="sidebar__middle--link" href="/features">Menu</a>
+                </span>
+                <span class="sidebar__middle--span">
+                    <i class="fal fa-concierge-bell sidebar__middle--icon"></i>
+                    <a class="sidebar__middle--link" href="/features">Services</a>
+                </span>
+                <span class="sidebar__middle--span">
+                    <i class="fal fa-user sidebar__middle--icon"></i>
+                    <a class="sidebar__middle--link" href="/about-us">About Us </a>
+                </span>
+                <hr>
+                <span class="sidebar__middle--span">
+                <a class="sidebar__middle--link" href="#">Online Documentations</a>
+                    <i class="fal fa-file-alt sidebar__middle--icon"></i>
+                </span>
+                <span class="sidebar__middle--span">
+                    <a class="sidebar__middle--link" href="aboutus.html">Help Desk</a>
+                    <i class="fal fa-user-headset sidebar__middle--icon"></i>
+                </span>
+                <span class="sidebar__middle--span">
+                    <a class="sidebar__middle--link" href="about-us.html">Contact</a>
+                    <i class="fal fa-phone sidebar__middle--icon"></i>
+                </span>
+            </div>
+            <div class="sidebar__bottom">
+                <!-- <a href="https://www.PizzaPlus.co.za/user/login" class="sidebar__bottom--link">Login</a> -->
+                <div class="sidebar__bottom--btn">
+                    <a href="https://www.PizzaPlus.co.za/registration" target="_blank" rel="noreferrer"
+                       class="primary-red-btn rounded-pill">Order Online</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidenav-layer" id="sidenavLayer">
+            <div class="sidebar-layer__top" id="hideLayer">
+                <i class="fad fa-arrow-left"></i>
+                <h2 class="sidebar-layer__top--h2" id="topH2"></h2>
+            </div>
+            <div class="sidebar-layer">
+                <div class="sidebar-layer__bottom"></div>
+            </div>
+        </div>
+    </nav>
+<!-- ======== Mobile Sidebar Menu END ======== -->
+
+
+
+<!-- ======== Top Icon Bar START ========= -->
+    <div id="headerSection">
+        <div class="support-bar">
+        <div class="support-bar-links">
+            <div class="support-bar-links__home">
+            <div class="support-bar-links__help">
+                <a href="https://support.PizzaPlus.co.za" target="_blank" rel="noreferrer"><div class="support-svg"><i class="fad fa-question-square"></i></div><span>Need Help?</span></a>
+            </div>
+            <div class="support-bar-links__phone">
+                <a href="tel: +27 21 3004455" ><div class="support-svg"><i class="fad fa-phone-square"></i></div><span>+1 (310) 111 8888</span></a>
+            </div>
+            <div class="support-bar-links__devdocs">
+                <a href="https://developers.PizzaPlus.co.za/documentation/" target="_blank" rel="noreferrer"><div class="support-svg"><i class="fad fa-file-code"></i></div><span>Track Order</span></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+<!-- ======== Top Icon Bar END ========= -->
+
+
+
+
+<!-- ======== header START ========= -->
+    <header class="header-section navbar sticky-top ">
+        <div class="header-wrapper">
+            <div class="header-section__burgermenu" id="openNav">
+                <span class="header-section__burgermenu--word">Menu</span>
+                <div class="header-section__burgermenu--lines">
+                    <div class="horizontal-line__darker"></div>
+                    <div class="horizontal-line__lighter"></div>
+                    <div class="horizontal-line__darker"></div>
+                </div>
+            </div>
+            <div class="header-section__logo" data-aos="fade-down" data-aos-delay="500">
+                <a href="index.html"><img id="headerLogo" src="assets/img/logo3.png" alt="PizzaPlus logo"></a>
+            </div>
+
+            <div class="header-section__navbar">
+                <div class="nav-triangle"></div>
+
+                <ul class="nav" data-aos="fade-left" data-aos-delay="100">
+                    <li class="nav-item">
+                        <i class="fal fa-home"></i>
+                        <a class="nav-link" href="index.html" role="button" data-haspopup="true" aria-expanded="false">Home</a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <i class="fal fa-pizza-slice"></i>
+                        <a class="nav-link" href="menu.html" role="button" data-haspopup="true" aria-expanded="false">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fal fa-concierge-bell"></i>
+                        <a class="nav-link " href="#deals" role="button" data-haspopup="true" aria-expanded="false">Deals</a>
+                    </li>
+                     <li class="nav-item">
+                        <i class="fal fa-pizza"></i>
+                        <a class="nav-link" href="build.html" role="button" data-haspopup="true" aria-expanded="false">Build</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fal fa-user"></i>
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-section__button"  data-aos="fade-left" data-aos-delay="100">
+                <div class="header__right-btns d-flex">
+                    <a class="header-section__button--link" href="#">+1 (310) 111 8888</a>
+                    <a class="primary-red-btn" href="#">Order Online</a>
+                </div>
+                <a class="btn btn-cart ml-5" href="javascript:void(0)">
+                    <span class="badge badge-danger rounded-pill p-2">0</span>
+                    <i class="fal fa-shopping-cart"></i>
+                </a>
+                <div class="cart-view">
+                    <div class="cart-empty">
+                        <img src="assets/img/empty-cart.png" class="empty-cart-img">
+                        <h3 class="empty-cart--text">Your Cart is Empty</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- ======== Header END ========= -->
+
+
+
+
+<!-- ======== Open Deals Section START ========= -->
+
+    <div class="container-fluid pt-4 mt-5" id="opendeals">
+        <div class="row">
+            <div class="col col-md-3 d-md-none d-lg-block  d-sm-none">
+                <img src="assets/img/deals/pizza/gif/deal2.gif" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col col-md-12 col-lg-6 d-lg-block d-md-block d-sm-none">
+                <a href="#">
+                    <img src="assets/img/deals/pizza/deal2.jpg" alt="" class="img-fluid rounded">
+                </a>
+            </div>
+            <div class="col col-md-3 d-md-none d-lg-block">
+                <img src="assets/img/deals/pizza/set2/deal2.jpeg" alt="" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+
+<!-- ======== Open Deals Section END ========= -->
+
+
+<!-- ======== Menu Section START ========= -->
+    <section class="menuSection" id="menu" data-aos="zoom-in">
+        <div class="container-fluid mt-0 pt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title m-auto">
+                        <h2>“Natural Ingredients”</h2>
+                        <h1>Explore <span class="text-danger">Menu</span></h1>
+                        <h1 class="title-large">Explore Menu</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-0">
+                <div class="row menu-items-list pb-4">
+                   
+                    <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-0.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag">
+                                        <span class="position-relative">Sale</span>
+                                    </div>
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-1.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">                            
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza1.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag hot">
+                                        <span class="position-relative">Hot</span>
+                                    </div>
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-2.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+                </div>
+
+                 <div class="row menu-items-list pb-4">
+                   
+                    <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-3.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza3.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag hot">
+                                        <span class="position-relative">Hot</span>
+                                    </div>
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-9.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag hot">
+                                        <span class="position-relative">Hot</span>
+                                    </div>                      
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-5.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">                            
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+                </div>
+            </div>
+             <div class="container p-0">
+                <div class="row menu-items-list pb-4">
+                   
+                    <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-0.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag">
+                                        <span class="position-relative">Sale</span>
+                                    </div>
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-1.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">                            
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza1.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <div class="item-tag hot">
+                                        <span class="position-relative">Hot</span>
+                                    </div>
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+
+                     <!-- Menu Item START -->
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 menu-item m-0 p-0">
+                            <div class="row position-relative">
+                                <div class="col-md-4 col-sm-12">
+                                    <img src="assets/img/products/pizza-2.png" alt="menu item image"  class="menu-item-img">
+                                </div>
+                                <div class="col-md-8 col-sm-12 float-right bg-white ml-auto pt-5 pb-5 pl-4 pr-4 position-relative item-details">
+                                    <h4 class="menu-item-title secondary-text darken-1 pb-4 position-absolute">Cheezy Bluster</h4>
+                                    <p class="menu-item-description pb-3 pt-3">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                                    <h4 class="price text-danger position-absolute">$3.66</h4>
+                                    <a href="#" class="btn btn-add">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- Menu Item END -->
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ======== Menu Section END ========= -->
+
+
+<section class="dish" id="dish">
+    <div class="container-fluid mt-0 pt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-title m-auto">
+                    <h1>Popular <span class="text-danger">Dishes</span></h1>
+                    <h1 class="title-large">Popular Dishes</h1>
+                </div>
+            </div>
+        </div>
+        <ul class="controls col-4">
+            <li class="buttons  button-active" data-filter="all">all</li>
+            <li class="buttons" data-filter="sandwich">sandwich</li>
+            <li class="buttons" data-filter="cake">cake</li>
+            <li class="buttons" data-filter="juice">juice</li>
+            <li class="buttons" data-filter="chocolate">chocolate</li>
+        </ul>
+        <div class="d-flex container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 image sandwich position-relative">
+                    <img src="assets/img/gallary/sandwich1.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">sandwich</a>
+                </div>
+                <div class="col-lg-3 col-md-4 image sandwich position-relative">
+                    <img src="assets/img/gallary/sandwich2.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">sandwich</a>
+                </div>
+                 <div class="col-lg-3 col-md-4 image sandwich position-relative">
+                    <img src="assets/img/gallary/sandwich3.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">sandwich</a>
+                </div>
+
+                 <div class="col-lg-3 col-md-4 image cake position-relative">
+                    <img src="assets/img/gallary/cake1.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">cake</a>
+                </div>
+                <div class="col-lg-3 col-md-4 image cake position-relative">
+                    <img src="assets/img/gallary/cake2.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">cake</a>
+                </div>
+                <div class="col-lg-3 col-md-4 image cake position-relative">
+                    <img src="assets/img/gallary/cake3.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">cake</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 image juice position-relative">
+                    <img src="assets/img/gallary/juice1.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">juice</a>
+                </div>
+                <div class="col-lg-3 col-md-4 image juice position-relative">
+                    <img src="assets/img/gallary/juice2.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">juice</a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 image chocolate position-relative">
+                    <img src="assets/img/gallary/chocolate.jpg" alt="gallary image" class="img-fluid">
+                    <a href="#">chocolate</a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- ======== Footer START ========= -->
+    <footer class="footer">
+        <img  class="footer__dots" src="assets/images/dot_grid_footer.svg" alt="Dots">
+        <div class="footer__container">
+            <div class="footer__container--top">
+                <section class="footer__column footer__column--mobile-heading">
+                    <a class="footer__column--mobile-logo" rel="noreferrer" href="https://www.dpogroup.com/"><img src="assets/images/dpo-group-logo.svg" alt="DPO logo"></a>
+                    <a class="footer__column--mobile-contact" href="tel: +27 21 3004455"><i class="fal fa-phone"></i> 021 300 4455 </a>
+                    <ul id="left-most-footer-menu-id" class="footer__list">
+                        <li><a class="footer__link" href="/about-us">About us</a></li>
+                        <li><a class="footer__link" href="/company-information" rel="nofollow">Company Info</a></li>
+                        <li><a class="footer__link" target="_blank" rel="noreferrer" href="https://www.PizzaPlus.co.za/blog/">PizzaPlus Blog</a></li>
+                        <li><a class="footer__link" target="_blank" rel="noreferrer" href="https://www.PizzaPlus.co.za/blog/category/pressreleases/">Press Releases</a></li>
+                        <li><a class="footer__link" href="/logos-and-images" rel="nofollow">Style Guide</a></li>
+                        <li><a class="footer__link" href="/security-fraud">Security and Fraud</a></li>
+                        
+                        <li><a class="footer__link" href="/features/account-types">Account Types</a></li>
+                        <li class="footer__link--logo"><a href="https://www.dpogroup.com/" rel="noreferrer" target="_blank"><img src="assets/images/dpo-group-logo.svg" alt="DPO logo"></a></li>
+                    </ul>
+                </section>
+                <section class="footer__column">
+                    <h5 class="footer__heading--about-h5"><a class="footer__heading footer__heading--about" href="/about-us">ABOUT US</a></h5>
+                    <h5><a class="footer__heading" href="/solutions">SOLUTIONS</a></h5>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="/solutions/ecommerce">Ecommerce</a></li>
+                        <li><a class="footer__link" href="/solutions/event-ticketing">Event Ticketing</a></li>
+                        <li><a class="footer__link" href="/solutions/invoicing">Invoicing</a></li>
+                        <li><a class="footer__link" href="/solutions/donations">Accepting Donations</a></li>
+                    </ul>
+                </section>
+                <section class="footer__column footer__column--extra-margin">
+                    <h5><a class="footer__heading" href="/features">FEATURES</a></h5>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="/features/payment-methods">Payment Methods</a></li>
+                        <li><a class="footer__link" href="/features/subscriptions">Subscriptions</a></li>
+                        <li><a class="footer__link" href="/features/tokenization">Tokenization</a></li>
+                        <li><a class="footer__link" href="/features/request-payment">Request a Payment</a></li>
+                        <li><a class="footer__link" href="/features/split-payments">Split Payments</a></li>
+                        <li><a class="footer__link" href="/features/on-site-payments">Onsite Payments</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer__container--bottom">
+                <section class="footer__column">
+                    <h5><a class="footer__heading" href="/integration">INTEGRATION</a></h5>
+                    <ul class="footer__list">
+                        <li><a class="footer__link" href="/integration/shopping-carts">Shopping Carts</a></li>
+                        <li><a class="footer__link" href="https://developers.PizzaPlus.co.za/documentation/" target="_blank" rel="noreferrer">Developer Documentation</a></li>
+                        <li><a class="footer__link" href="/integration/pay-now-buttons">Pay Now Buttons</a></li>
+                        <li><a class="footer__link" href="/features/request-payment">Payment Request</a></li>
+                        <li><a target="_blank" rel="noreferrer" class="footer__link" href="https://status.PizzaPlus.co.za"><i id="footer__status" class="fas fa-circle footer__status"></i> System Status</a></li>
+                    </ul>
+                </section>
+                <section id="mobile-only-footer" class="footer__column">
+                    <h5><a class="footer__heading" target="_blank" href="https://www.PizzaPlus.co.za/blog" rel="noreferrer">PizzaPlus BLOG</a></h5>
+                </section>
+                <article class="footer__contact">
+                    <section class="footer__column footer__column--double">
+                        <div class="footer__contact--top">
+                            <h5><a class="footer__heading" href="/contact">CONTACT</a></h5>
+                            <ul class="footer__list">
+                                <li><a class="footer__link" href="tel: +27 21 3004455">+ 27 (0)21 300 4455</a></li>
+                                <li><a class="footer__link" href="mailto:support@PizzaPlus.co.za">support@PizzaPlus.co.za</a></li>
+                                <li><a class="footer__link" target="_blank" rel="noreferrer" href="https://support.PizzaPlus.co.za">Help Center</a></li>
+                                <li><a class="footer__link" href="/contact">Contact Sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__contact--bottom">
+                            <h5 class="footer__heading">WE ARE SOCIAL</h5>
+                            <section class="footer__contact--logos">
+
+                                <a class="footer__contact--circle" href="https://twitter.com/PizzaPlus?lang=en"
+                                   target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
+                                <a class="footer__contact--circle" href="https://www.facebook.com/PizzaPlus/"
+                                   target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a>
+                                <a class="footer__contact--circle" href="https://www.linkedin.com/company/PizzaPlus/"
+                                   target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+                                <a class="footer__contact--circle" href="https://www.instagram.com/PizzaPlussa/"
+                                   target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a>
+
+                            </section>
+                        </div>
+                    </section>
+                </article>
+
+                <section class="footer__column footer__column--tablet">
+                    <h5 class="footer__heading"><a class="footer__column--tablet-social" href="">WE ARE SOCIAL</a></h5>
+                    <section class="footer__contact--logos">
+                        <a class="footer__contact--circle" href="https://twitter.com/PizzaPlus?lang=en"
+                           target="_blank" rel="noreferrer" title="PizzaPlus Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="footer__contact--circle" href="https://www.facebook.com/PizzaPlus/"
+                           target="_blank" rel="noreferrer" title="PizzaPlus Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="footer__contact--circle" href="https://www.linkedin.com/company/PizzaPlus/"
+                           target="_blank" rel="noreferrer" title="PizzaPlus Linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a class="footer__contact--circle" href="https://www.instagram.com/PizzaPlussa/"
+                           target="_blank" rel="noreferrer" title="PizzaPlus Instagram"><i class="fab fa-instagram"></i></a>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <img class="footer__oval" src="assets/images/oval_footer.svg" alt="oval" >
+        <img class="footer__trinagle" src="assets/images/triangle_footer.svg" alt="triangle" >
+        <img class="footer__trinagle--full" src="assets/images/full_triangle_footer.svg" alt="triangle" >
+    </footer>
+
+    <div>
+        <div class="policy-bar">
+            <div class="container">
+                <div class="policy-bar__pci-dss-level-1-serv"><span>PCI-DSS Level 1 Service Provider Compliant</span></div>
+                <div class="policy-bar__end-user-agreement"><span><a href="/end-user-agreement" rel=”nofollow”>End User Agreement</a>  |  <a href="/privacy-policy" rel=”nofollow”>Privacy Policy</a></span></div>
+                <div class="policy-bar__desk"><span>©2021 - PizzaPlus  |   All right reserved</span></div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<!-- <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script> -->
+
+<script src="assets/js/jquery-1.12.3.min.js"></script>
+<script src='assets/js/slick.min.js'></script>
+<script nonce="a9wm3KRVt4" src="assets/js/all.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js'></script> -->
+<script src='assets/js/swiper.min.js'></script>
+<script src="assets/js/aos.js"></script>
+<!-- <script nonce="a9wm3KRVt4" type="text/javascript" src="assets/js/se-v2.js"></script> -->
+
+
+
+<script>
+      AOS.init();
+    var swiper = new Swiper('.product-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      // initialSlide: 2,
+      loop: false,
+      navigation: {
+        nextEl: '.next',
+        prevEl: '.prev' },
+
+      // mousewheel: {
+      //     // invert: false
+      // },
+      on: {
+        init: function () {
+          var index = this.activeIndex;
+
+          var target = $('.product-slider__item').eq(index).data('target');
+
+          console.log(target);
+
+          $('.product-img__item').removeClass('active');
+          $('.product-img__item#' + target).addClass('active');
+        } } });
+
+
+
+
+    swiper.on('slideChange', function () {
+      var index = this.activeIndex;
+
+      var target = $('.product-slider__item').eq(index).data('target');
+
+      console.log(target);
+
+      $('.product-img__item').removeClass('active');
+      $('.product-img__item#' + target).addClass('active');
+
+      if (swiper.isEnd) {
+        $('.prev').removeClass('disabled');
+        $('.next').addClass('disabled');
+      } else {
+        // $('.next').removeClass('disabled');
+      }
+
+      if (swiper.isBeginning) {
+        $('.prev').addClass('disabled');
+        $('.next').removeClass('disabled');
+      } else {
+        // $('.prev').removeClass('disabled');
+      }
+    });
+
+    $(".js-fav").on("click", function () {
+      $(this).find('.heart').toggleClass("is-active");
+    });
+</script>
+
+</body>
+</html>
+
+
