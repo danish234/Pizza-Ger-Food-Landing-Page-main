@@ -1,23 +1,29 @@
-# Pizza-Ger-Food-Landing-Page-main
+# Fully Responsive Premium Pizza Food Landing Page
+With JavaScript Add to Cart Functionality
+Highly Appreiated to give attribution to the Author
+ 
  
 ## Languages Used:
  Javascript</br>
  CSS3</br>
  HTML5</br>
 </br>
+## <a target="_blank" href="https://www.behance.net/danishlaeeq">See More on Behance</a>
 </br>
 </br>
-## Preview:
+</br>
+<h2>Preview</h2>
 <img src="preview.png">
 </br>
 </br>
-Screenshot
+<h2>Screenshot</h2>
 <img src="screenshot.png">
 </br>
 </br>
 <div class="bottom-text">
-   <h2>Highly Appreiated to give attribution to the Author</h2>
-   <a target="_blank" href="https://www.behance.net/danishlaeeq">See More on Behance</a>
-   <br>
-   <a target="_blank" href="https://www.linkedin.com/in/danishlaeeq/">LinkedIn</a>
+   <h2>Support My Work</h2>
+   </br>
+   <a target="_blank" href="https://www.buymeacoffee.com/danishlaeeq">Buy Me a Coffe</a>
+   </br>
+   <a target="_blank" href="https://www.patreon.com/danishlaeeq">Patreon</a>
 </div>
