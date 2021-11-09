@@ -23,7 +23,7 @@ Highly Appreiated to give attribution to the Author
 <div class="bottom-text">
    <h2>Support My Work</h2>
    </br>
-   <a target="_blank" href="https://www.buymeacoffee.com/danishlaeeq">Buy Me a Coffe</a>
+   <h2><a target="_blank" href="https://www.buymeacoffee.com/danishlaeeq">Buy Me a Coffe</a></h2>
    </br>
-   <a target="_blank" href="https://www.patreon.com/danishlaeeq">Patreon</a>
+   <h2><a target="_blank" href="https://www.patreon.com/danishlaeeq">Patreon</a></h2>
 </div>
