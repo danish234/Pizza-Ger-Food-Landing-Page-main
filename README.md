@@ -10,11 +10,12 @@ Highly Appreiated to give attribution to the Author
 </br>
 ## <a target="_blank" href="https://www.behance.net/danishlaeeq">See More on Behance</a>
 </br>
-<div class="bottom-text">
-   <h2>Support My Work</h2>
-   <h3><a target="_blank" href="https://www.buymeacoffee.com/danishlaeeq">Buy Me a Coffe</a></h3>
-   <h3><a target="_blank" href="https://www.patreon.com/danishlaeeq">Patreon</a></h3>
-</div>
+
+## Support My Work
+
+### [Buy Me a Coffee](https://www.buymeacoffee.com/danishlaeeq)
+### [PayPal](https://www.paypal.com/paypalme/makstudioo/5usd)
+
 </br>
 </br>
 <h2>Preview</h2>
